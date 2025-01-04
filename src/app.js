@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import cors from 'cors';
-import loaderRoute from './routes/loader.routes.js';
+import loaderRoute from '../routes/loader.routes.js';
 import { engine } from 'express-handlebars';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -19,10 +19,10 @@ app.use(cors({
 }));
 
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '../views'));
 app.engine('.hbs', engine({
     extname: '.hbs',
     defaultLayout: 'main'

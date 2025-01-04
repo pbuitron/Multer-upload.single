@@ -2,10 +2,10 @@
   "name": "loader_multer",
   "version": "1.0.0",
   "type": "module",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "dev": "node --watch app.js",
-    "start": "node app.js",
+    "dev": "node --watch src/app.js",
+    "start": "node src/app.js",
     "build": "npm install && npm run start"
   },
   "keywords": [],
