@@ -31,4 +31,6 @@ app.set('view engine', '.hbs');
 
 app.use('/api', loaderRoute);
 
-app.listen(PORT, () => console.log(`Server running in http://localhost:${PORT}`));
+app.listen(process.env.PORT || 8080, () => {
+    console.log(`Server running in http://localhost:${process.env.PORT || 8080}`);
+  });
