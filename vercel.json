@@ -4,7 +4,8 @@
     {
       "src": "app.js",
       "use": "@vercel/static-build",
-      "installCommand": "npm install"
+      "installCommand": "npm install",
+      "build": "npm run build"
     }
   ],
   "routes": [
