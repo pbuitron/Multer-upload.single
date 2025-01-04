@@ -32,5 +32,5 @@ app.set('view engine', '.hbs');
 app.use('/api', loaderRoute);
 
 app.listen(process.env.PORT || 8080, () => {
-    console.log(`Server running in https://multer-upload-single.vercel.app/:${process.env.PORT || 8080}`);
+    console.log(`Server running in http://localhost:${process.env.PORT || 8080}`);
   });
